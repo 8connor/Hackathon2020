@@ -2,7 +2,7 @@ var express = require("express");
 var mysql = require("mysql");
 var axios = require("axios");
 var path = require("path");
-var moment = require("moment")
+var moment = require("moment");
 
 var app = express();
 var PORT = 3000;
@@ -67,7 +67,6 @@ app.get("/api/trash", function (req, res) {
     })
 
 })
-
 
 app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
