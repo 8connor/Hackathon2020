@@ -6,21 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrashBandit</title>
     <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-
-
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
 </head>
 
-<body>
+<body class="teal lighten-4">
+
+    <nav>
+        <div class="nav-wrapper teal lighten-1">
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="#!" class="brand-logo center"><img src="./assets/images/Untitled (2).png" height="60"
+                    width="60"></a>
+            <ul class="left hide-on-med-and-down">
+                <li class="active"><a href="#">Home</a></li>
+            </ul>
+        </div>
+        <!-- Modal Trigger -->
+
+
+    </nav>
+    <div class="container">
+        <div class="row center">
+            <div class="col l12 s12 m12">
+                <a class="waves-effect waves-light btn-large modal-trigger" href="#modal1">modal</a>
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content black-text text-darken-2">
+                        <h4>Modal Header</h4>
+                        <p>A bunch of text</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Home</a></li>
+    </ul>
 
 </body>
-
-<footer>
-
+<footer class="page-footer teal lighten-1">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">About</h5>
+                <p class="grey-text text-lighten-4">This is where we will fill in information about the website.
+                </p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">LinkedIn</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Github</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2020 Trash Bandit
+        </div>
+    </div>
 </footer>
 
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./assets/js/app.js"></script>
 
 </html>
