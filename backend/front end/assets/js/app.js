@@ -13,19 +13,21 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     }
 
-    fetch("/api/trash").then(response => response.json())
-        .then(function (data) {
-            var newDiv = document.createElement("div");
-            var newText = document.getElementById("infoTable").innerHTML = "Trash date: " + data[0].date + " class: " + data[1].class + " source: " + data[2].source
+    initMap()
 
-            newDiv.appendChild(newText);
+    // fetch("/api/trash").then(response => response.json())
+    //     .then(function (data) {
+    //         var newDiv = document.createElement("div");
+    //         // var newText = document.getElementById("infoTable").innerHTML = "Trash date: " + data[0].date + " class: " + data[1].class + " source: " + data[2].source
 
-            var currentDiv = document.getElementById("infoTable");
+    //         // newDiv.appendChild(newText);
+
+    //         // var currentDiv = document.getElementById("infoTable");
 
 
-            console.log(data)
-        }
-    );
+    //         console.log(data)
+    //     }
+    // );
 });
 
 
