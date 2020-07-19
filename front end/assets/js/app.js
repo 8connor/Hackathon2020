@@ -1,30 +1,11 @@
-document.addEventListener('DOMContentLoaded', function () {
-  var sideNavElems = document.querySelectorAll('.sidenav');
-  var sideNavInstances = M.Sidenav.init(sideNavElems);
-  var modalElems = document.querySelectorAll('.modal');
-  var modalInstances = M.Modal.init(modalElems);
+
+window.addEventListener('load', function () {
+  var sideNavInstances = M.Sidenav.init(document.querySelectorAll('.sidenav'));
+
+  var modalInstances = M.Modal.init(document.querySelectorAll('.modal'));
 
   // This example displays a marker at the center of Australia.
   // When the user clicks the marker, an info window opens.
-
-
-  fetch("/api/trash").then(response => response.json())
-    .then(function (data) {
-      // var newDiv = document.createElement("div");
-      // var newText = document.getElementById("infoTable").innerHTML = "Trash date: " + data[0].date + " class: " + data[1].class + " source: " + data[2].source
-
-      // newDiv.appendChild(newText);
-
-      // var currentDiv = document.getElementById("infoTable");
-
-
-      // console.log(data)
-    }
-    );
-});
-
-function initMap() {
-
   //centering of map
   var knoxville = {
     lat: 35.9606,
@@ -61,7 +42,7 @@ function initMap() {
     lat: 35.970315,
     lng: -83.917211
   };
-``
+  ``
   //content bubbles of recycling places
   var contentString1 =
     '<div id="content">' +
@@ -205,7 +186,11 @@ function initMap() {
     infowindow5.open(map, marker5);
   });
 
-}
 
+  fetch("/api/trash").then(response => response.json())
+    .then(function (data) {
+      console.log(data)
+    }
+  );
 
-window.addEventListener('load', initMap())
+});
