@@ -7,6 +7,7 @@
     <title>TrashBandit</title>
     <link rel="shortcut icon" type="image/jpg" href="./assets/images/Untitled (2).png">
     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/css/stylesheet.css">
@@ -15,7 +16,7 @@
 <body class="teal lighten-4">
 
     <nav>
-        <div class="nav-wrapper teal lighten-1">
+        <div class="nav-wrapper teal lighten-1" id="top">
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <a href="#!" class="brand-logo center"><img src="./assets/images/Untitled (2).png" height="60"
                     width="60"></a>
@@ -27,7 +28,7 @@
 
             </ul>
             <ul class="left hide-on-med-and-down">
-                <li><a href="#">Home</a></li>
+                <li><a href="#top">Home</a></li>
                 <li><a href="#modal2" class="modal-trigger">Create account</a></li>
                 <li><a href="#about">About</a></li>
             </ul>
@@ -38,7 +39,7 @@
 
     </ul>
 
-    <div id='map'>
+    <div class='animate__animated animate__fadeInUp' id='map'>
 
     </div>
 

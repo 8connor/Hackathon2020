@@ -1,9 +1,15 @@
 #map {
     height: 100%;
+    z-index: 2;
 }
 
 /* Optional: Makes the sample page fill the window. */
 
 html, body {
     height: 750px;
+}
+
+
+footer{
+    z-index: 1;
 }
