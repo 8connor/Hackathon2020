@@ -19,31 +19,17 @@
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <a href="#!" class="brand-logo center"><img src="./assets/images/Untitled (2).png" height="60"
                     width="60"></a>
-            <ul class="left hide-on-med-and-down">
+            <ul class="right hide-on-med-and-down">
                 <!-- Modal Trigger -->
                 <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Login</a>
 
-                <!-- Modal Structure -->
-                <div id="modal1" class="modal">
-                    <div class="modal-content center teal lighten-4">
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="email" type="email" class="validate">
-                                <label for="email">Email</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="password" type="password" class="validate">
-                                <label for="password">Password</label>
-                            </div>
-                        </div>
 
-                        <a class="btn waves-light wave-effect modal-close">login</a>
-                    </div>
 
-                </div>
-
+            </ul>
+            <ul class="left hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#modal2" class="modal-trigger">Create account</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
         </div>
     </nav>
@@ -56,6 +42,52 @@
 
     </div>
 
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content center teal lighten-4">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Password</label>
+                </div>
+            </div>
+
+            <a class="btn waves-light wave-effect modal-close">login</a>
+        </div>
+
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content center teal lighten-4">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Retype password</label>
+                </div>
+            </div>
+
+            <a class="btn waves-light wave-effect modal-close">Create account</a>
+        </div>
+
+    </div>
 
 
 </body>
@@ -63,7 +95,7 @@
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
-                <h5 class="white-text">About</h5>
+                <h5 class="white-text" id="about">About</h5>
                 <p class="grey-text text-lighten-4"> Trash Bandit is a game that brings awareness about recycling.
                     The Trash Bandit website acts like a community leaderboard to support recycling in your community.
                     The more your community recycles, the more points every player from that community obtains monthly.
