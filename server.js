@@ -53,9 +53,6 @@ function refresh() {
     });
 };
 
-
-
-
 app.get("/", function (req, res) {
     res.sendFile(path.join(__dirname, "../index.html"));
 });
@@ -68,7 +65,7 @@ app.get("/api/trash", function (req, res) {
 
         res.json(response)
     })
-})
+});
 
 app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
